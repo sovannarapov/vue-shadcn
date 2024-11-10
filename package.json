@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview",
-    "preinstall": "npm config set package-lock false"
+    "preview": "vite preview"
   },
   "engines": {
     "npm": "please-use-yarn",
