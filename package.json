@@ -8,6 +8,10 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.22"
+  },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -15,7 +19,8 @@
     "radix-vue": "^1.9.9",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "vue": "^3.5.12"
+    "vue": "^3.5.12",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
