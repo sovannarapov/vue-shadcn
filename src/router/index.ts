@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Dashboard from '@/pages/Dashboard.vue';
-import NotFound from '@/pages/NotFound.vue';
+import Dashboard from '@/pages/dashboard.vue';
+import NotFound from '@/pages/404.vue';
 import ProductList from '@/pages/product/index.vue';
 import CustomerList from '@/pages/customer/index.vue';
 
