@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import Dashboard from '@/pages/Dashboard.vue';
-import Error from '@/layouts/error.vue';
+import NotFound from '@/pages/NotFound.vue';
 import Product from '@/pages/Product.vue';
 import Customer from '@/pages/Customer.vue';
 
@@ -32,8 +32,8 @@ const routes = [
   },
   {
     path: '/:pathMatch(.*)*',
-    name: 'Error',
-    component: Error,
+    name: 'NotFound',
+    component: NotFound,
   },
 ];
 
