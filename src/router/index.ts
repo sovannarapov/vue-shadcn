@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import Dashboard from '@/pages/Dashboard.vue';
 import NotFound from '@/pages/NotFound.vue';
-import Product from '@/pages/Product.vue';
-import Customer from '@/pages/Customer.vue';
+import ProductList from '@/pages/product/index.vue';
+import CustomerList from '@/pages/customer/index.vue';
 
 const routes = [
   {
@@ -22,13 +22,13 @@ const routes = [
   },
   {
     path: '/products',
-    name: 'Product',
-    component: Product,
+    name: 'ProductList',
+    component: ProductList,
   },
   {
     path: '/customers',
-    name: 'Customer',
-    component: Customer,
+    name: 'CustomerList',
+    component: CustomerList,
   },
   {
     path: '/:pathMatch(.*)*',
