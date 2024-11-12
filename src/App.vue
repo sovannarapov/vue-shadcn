@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup>
+import Default from "@/layouts/default.vue";
+</script>
 
 <template>
-  <div class="text-center">
-    <h1 class="text-5xl font-bold">Hello Shadcn</h1>
-  </div>
+  <Default>
+    <RouterView/>
+  </Default>
 </template>
