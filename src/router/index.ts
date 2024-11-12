@@ -1,13 +1,40 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from '@/pages/Home.vue';
-import About from '@/pages/About.vue';
-import NotFound from '@/components/NotFound.vue';
+import Dashboard from '@/pages/Dashboard.vue';
+import Error from '@/layouts/error.vue';
+import Product from '@/pages/Product.vue';
+import Customer from '@/pages/Customer.vue';
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/:pathMatch(.*)*', component: NotFound },
+  {
+    path: '/',
+    redirect: '/dashboard',
+  },
+  {
+    path: '/',
+    component: Dashboard,
+    children: [
+      {
+        path: 'dashboard',
+        component: Dashboard,
+      },
+    ],
+  },
+  {
+    path: '/products',
+    name: 'Product',
+    component: Product,
+  },
+  {
+    path: '/customers',
+    name: 'Customer',
+    component: Customer,
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'Error',
+    component: Error,
+  },
 ];
 
 const router = createRouter({
