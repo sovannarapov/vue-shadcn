@@ -1,9 +1,7 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import CustomerList from '@/components/pages/customer/CustomerList.vue';
 </script>
 
 <template>
-  <div>
-    <CustomerList />
-  </div>
+  <CustomerList />
 </template>
