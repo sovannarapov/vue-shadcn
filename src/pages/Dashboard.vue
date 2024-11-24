@@ -1,8 +1,6 @@
 <script lang="ts" setup>
-
+import Dashboard from '@/components/pages/Dashboard.vue';
 </script>
 <template>
-  <div>
-    <h1>Dashboard Page</h1>
-  </div>
+  <Dashboard />
 </template>
